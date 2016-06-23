@@ -8,18 +8,9 @@
 
   <!-- PG70 -->
   <xacro:include filename="$(find g_ball_description)/urdf/pg70.urdf.xacro"/>
-  
-<!--
-  <link name="powerball_base_link">
-  </link>
-  
-  <joint name="base_footprint_pb_joint" type="fixed">
-     <origin xyz="0.100 0 0.375" rpy="0 0 0" />
-     <parent link="base_link"/>
-     <child link="powerball_base_link"/>
-  </joint>  
--->
+ 
 
+ 
   <!-- arm -->
   <xacro:lwa4p_robotnik/>
     
