@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: g_ball_description
+    relative_path: robots/gball_pg70.urdf.xacro
+  SRDF:
+    relative_path: config/guardian.srdf
+  CONFIG:
+    generated_timestamp: 1466608921
