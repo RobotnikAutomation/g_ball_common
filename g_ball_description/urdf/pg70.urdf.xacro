@@ -36,7 +36,7 @@
       <parent link="${name}_palm_link" />
       <child link="${name}_finger_left_link" />
       <axis xyz="0 1 0" />
-      <limit effort="10" lower="-0.001" upper="0.04" velocity="2.0"/>
+      <limit effort="10" lower="0.0045" upper="0.0385" velocity="2.0"/>
     </joint>
 
     <link name="${name}_finger_left_link">
