@@ -28,7 +28,7 @@
 
   <include file="$(find g_ball_moveit_config)/launch/moveit_rviz.launch">
     <arg name="config" value="true"/>
-  </include>
+  </include>  
   
   <!--include file="$(find g_ball_moveit_config)/launch/default_warehouse_db.launch" /-->
 

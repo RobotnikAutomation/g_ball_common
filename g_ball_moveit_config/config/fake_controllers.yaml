@@ -7,4 +7,6 @@ controller_list:
       - arm_4_joint
       - arm_5_joint
       - arm_6_joint
+  - name: fake_gripper_controller
+    joints:
       - pg70_finger_left_joint

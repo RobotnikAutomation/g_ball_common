@@ -1,7 +1,13 @@
 controller_list:
-  - name: arm
-    #action_ns: joint_trajectory_action
-    action_ns: joint_trajectory_controller/follow_joint_trajectory
+  - name: arm/joint_trajectory_controller_gripper
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints: 
+        - pg70_finger_left_joint
+
+  - name: arm/joint_trajectory_controller
+    action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
     default: true
     joints: 
@@ -11,4 +17,5 @@ controller_list:
         - arm_4_joint
         - arm_5_joint
         - arm_6_joint
-        - pg70_finger_left_joint
+
+    

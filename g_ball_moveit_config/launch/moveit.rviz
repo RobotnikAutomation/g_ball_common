@@ -5,9 +5,10 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /MotionPlanning1
-        - /MotionPlanning1/Planning Request1
+        - /TF1
+        - /TF1/Frames1
       Splitter Ratio: 0.74256
-    Tree Height: 332
+    Tree Height: 304
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -118,6 +119,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           front_left_wheel:
             Alpha: 1
             Show Axes: false
@@ -261,6 +266,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           front_left_wheel:
             Alpha: 1
             Show Axes: false
@@ -310,6 +319,105 @@ Visualization Manager:
         Show Robot Collision: false
         Show Robot Visual: true
       Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        arm_0_link:
+          Value: false
+        arm_1_link:
+          Value: false
+        arm_2_link:
+          Value: false
+        arm_3_link:
+          Value: false
+        arm_4_link:
+          Value: false
+        arm_5_link:
+          Value: false
+        arm_6_link:
+          Value: true
+        back_left_wheel:
+          Value: false
+        back_right_wheel:
+          Value: false
+        base_footprint:
+          Value: false
+        base_link:
+          Value: false
+        camera_depth_frame:
+          Value: false
+        camera_depth_optical_frame:
+          Value: false
+        camera_link:
+          Value: false
+        camera_rgb_frame:
+          Value: false
+        camera_rgb_optical_frame:
+          Value: false
+        front_left_wheel:
+          Value: false
+        front_right_wheel:
+          Value: false
+        imu_link:
+          Value: false
+        left_track:
+          Value: false
+        pg70_finger_left_link:
+          Value: true
+        pg70_finger_right_link:
+          Value: false
+        pg70_palm_link:
+          Value: true
+        powerball_base_link:
+          Value: true
+        right_track:
+          Value: false
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        base_footprint:
+          base_link:
+            back_left_wheel:
+              {}
+            back_right_wheel:
+              {}
+            camera_link:
+              camera_depth_frame:
+                camera_depth_optical_frame:
+                  {}
+              camera_rgb_frame:
+                camera_rgb_optical_frame:
+                  {}
+            front_left_wheel:
+              {}
+            front_right_wheel:
+              {}
+            imu_link:
+              {}
+            left_track:
+              {}
+            powerball_base_link:
+              arm_0_link:
+                arm_1_link:
+                  arm_2_link:
+                    arm_3_link:
+                      arm_4_link:
+                        arm_5_link:
+                          arm_6_link:
+                            pg70_palm_link:
+                              pg70_finger_left_link:
+                                {}
+                              pg70_finger_right_link:
+                                {}
+            right_track:
+              {}
+      Update Interval: 0
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -325,7 +433,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 2.59895
+      Distance: 3.74864
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
@@ -337,24 +445,24 @@ Visualization Manager:
         Z: 2.23518e-07
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.334797
+      Pitch: 0.694797
       Target Frame: base_footprint
       Value: XYOrbit (rviz)
-      Yaw: 0.188635
+      Yaw: 2.50679
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 1028
+  Height: 1000
   Help:
     collapsed: false
   Hide Left Dock: false
   Hide Right Dock: false
   Motion Planning:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002b1000003befc0200000005fb000000100044006900730070006c0061007900730100000028000001e1000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e0067010000020f000001d7000001cc00ffffff0000046d000003be00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002b1000003a2fc0200000005fb000000100044006900730070006c0061007900730100000028000001c5000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000001f3000001d7000001cc00ffffff00000208000003a200000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 1828
-  X: 72
-  Y: 14
+  Width: 1215
+  X: 65
+  Y: 24
